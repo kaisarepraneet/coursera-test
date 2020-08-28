@@ -9,83 +9,91 @@
 			margin:0 !important;
 			padding: 0 !important;
 		}
+		
+		h1
+		{
+			text-align: center;
+		}
+
 		.row
 		{
 			width: 100%;
 		}
+		div
+		{
+			float: left;
+			border: 2.5px solid black;
+			margin-left: 1%;
+			margin-top: 1%;
+			background-color: grey;
+		}
+
+		#div1
+		{
+			width: 31%;
+		}
+		#div2
+		{
+			width: 31%;
+		}
+		#div3
+		{
+			width: 31%;
+		}
+
+
 		p
 		{
-			border:1px solid black;
-			background-color: blue;
 			color: white;
-			/*width: 90%;*/
-			height:150px;
+			width: 95%;
+			text-align: justify;
 			margin-right: auto;
 			margin-left: auto;
+			margin-top: 8%;
+			font-size: 1.2em;
 		}
+
+		.heading
+		{
+			margin: -0.3%;	
+			float: right;
+			width: 20%;
+			padding: 1%;
+			font-size: 1.3em;
+			text-align: center;
+			border: 2px solid black;
+			background-color: white;
+			color: black;
+		}
+
 		@media (min-width:0px) and (max-width: 767px)
 		{
-			.col-sd-4,.col-sd-6,.col-sd-12{
-				float: left;
-				border:1px solid;
-			}
-			.col-sd-4
+			#div1,#div2,#div3
 			{
-				width:33%;
-			}
-			.col-sd-6
-			{
-				width:48%;
-			}
-			.col-sd-12
-			{
-				width:96%;
+				width: 97.5%;
 			}
 		}
-	@media (min-width: 768px) and (max-height: 991px)
+		@media (min-width: 768px) and (max-height: 991px)
 		{
-			.col-md-4,.col-md-6,.col-md-12
+			#div1,#div2
 			{
-				float: left;
-				border:1px solid;
+				width: 48%;
 			}
-			.col-md-4
+			#div3
 			{
-				width:33%;
-			}
-			.col-md-6
-			{
-				width:48%;
-			}
-			.col-md-12
-			{
-				width:96%;
+				width: 97.5%;
 			}
 		}
 		
 
 		@media (min-width: 992px) 
 		{
-			.col-lg-4,.col-lg-6,.col-lg-12{
-				float: left;
-				border:1px solid;
-				margin-left:0.3%; 
-			}
-			.col-lg-4
+			#div1,#div2,#div3
 			{
-				background-color: red;
-				width:33%;
-			}
-			.col-lg-6
-			{
-				width:50%;
-			}
-			.col-lg-12
-			{
-				width:98%;
+				width: 31%;
 			}
 		}
-
+		
 		
 
 		 
@@ -94,11 +102,20 @@
 </head>
 <body>
 
-<h1>Hello coursera</h1>
-<div class="row">
-<div class="col-lg-4 col-md-6 col-sd-12"><p>Item 1</p></div>
-<div class="col-lg-4 col-md-6 col-sd-12"><p>Item 2</p></div>
-<div class="col-lg-4 col-md-12 col-sd-12"><p>Item 3</p></div>
+<h1>Our Menu</h1>
+
+<div id="div1">
+	<div class="heading">Chicken</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.	Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 </div>
+<div id="div2">
+	<div class="heading">Beef</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.	Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</div>
+<div id="div3">
+	<div class="heading">Sushi</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.	Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</div>
+
 </body>
 </html>
